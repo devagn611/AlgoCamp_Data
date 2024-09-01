@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Dragger</title>
+  </head>
+  <body class="bg-blue-50 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center mb-8 text-blue-800">Image Gallery</h1>
+        <div class="image-stack grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="image-item bg-white rounded-lg shadow-lg overflow-hidden" draggable="true">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Tank 1</h3>
+                    <div class="relative pt-[100%]">
+                        <img src="https://placehold.co/400x400/87CEEB/ffffff?text=Water+Tank+1" alt="Water Tank 1" id="img1" class="absolute inset-0 w-full h-full object-cover rounded-md" />
+                    </div>
+                </div>
+            </div>
+            <div class="image-item bg-white rounded-lg shadow-lg overflow-hidden" draggable="true">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Tank 2</h3>
+                    <div class="relative pt-[100%]">
+                        <img src="https://placehold.co/400x400/4682B4/ffffff?text=Water+Tank+2" alt="Water Tank 2" id="img2" class="absolute inset-0 w-full h-full object-cover rounded-md" />
+                    </div>
+                </div>
+            </div>
+            <div class="image-item bg-white rounded-lg shadow-lg overflow-hidden" draggable="true">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Tank 3</h3>
+                    <div class="relative pt-[100%]">
+                        <img src="https://placehold.co/400x400/1E90FF/ffffff?text=Water+Tank+3" alt="Water Tank 3" id="img3" class="absolute inset-0 w-full h-full object-cover rounded-md" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
